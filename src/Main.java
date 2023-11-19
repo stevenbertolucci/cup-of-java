@@ -6,6 +6,7 @@ public class Main {
         int[] array = {5, 3, 7, 1, 2, 4, 3, 2, 1};
         System.out.println("Below is the array we have right now:\n" + Arrays.toString(array));
 
+        // Manual Sort
         for (int i = 0; i < array.length; i++) {
             for (int j = i; j <= array.length-1; j++) {
                 if (array[j] < array[i]) {
@@ -16,6 +17,7 @@ public class Main {
             }
         }
 
+        // Display the sorted array
         System.out.print("Here is the sorted array using manual sort: \n");
         System.out.print("[");
         for (int i = 0; i < array.length; i++) {
@@ -27,8 +29,10 @@ public class Main {
         }
         System.out.print("]\n");
 
-        Arrays.sort(array);
-        System.out.println("Sorted array: \n" + Arrays.toString(array));
+        // Sort using the library
+        int[] array2 = {5, 3, 7, 1, 2, 4, 3, 2, 1};
+        Arrays.sort(array2);
+        System.out.println("Sorted array: \n" + Arrays.toString(array2));
 
     }
 }
