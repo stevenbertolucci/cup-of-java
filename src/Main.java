@@ -18,9 +18,11 @@ public class Main {
 
         System.out.print("Here is the sorted array using manual sort: \n");
         System.out.print("[");
-        for (int i : array) {
-            if (i < array.length-1) {
-                System.out.print(i + ", ");
+        for (int i = 0; i < array.length; i++) {
+            if (i < array.length - 1) {
+                System.out.print(array[i] + ", ");
+            } else {
+                System.out.print(array[i]);
             }
         }
         System.out.print("]\n");
